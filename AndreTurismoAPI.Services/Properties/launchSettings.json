@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "AndreTurismoAPI.Services": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:64747;http://localhost:64749"
+    }
+  }
+}
