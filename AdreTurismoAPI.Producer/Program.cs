@@ -1,9 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using AndreTurismoAPI.PacoteService.Data;
+using AndreTurismoAPI.Services;
+using RabbitMQ.Client;
+
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<AndreTurismoAPIPacoteServiceContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("AndreTurismoAPIPacoteServiceContext") ?? throw new InvalidOperationException("Connection string 'AndreTurismoAPIPacoteServiceContext' not found.")));
 
 // Add services to the container.
 
@@ -11,6 +9,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddSingleton<ConnectionFactory>();
 
 var app = builder.Build();
 

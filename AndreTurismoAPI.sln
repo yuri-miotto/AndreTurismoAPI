@@ -17,13 +17,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AndreTurismoAPI.CityService
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AndreTurismoAPI.Test", "AndreTurismo.Test\AndreTurismoAPI.Test.csproj", "{66D76239-D513-45FC-B83C-5094B2D634F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndreTurismoAPI.ClienteService", "AndreTurismoAPI.ClienteService\AndreTurismoAPI.ClienteService.csproj", "{17DEAE3E-A26D-4557-8D50-3221FA8E8DB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AndreTurismoAPI.ClienteService", "AndreTurismoAPI.ClienteService\AndreTurismoAPI.ClienteService.csproj", "{17DEAE3E-A26D-4557-8D50-3221FA8E8DB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndreTurismoAPI.HotelService", "AndreTurismoAPI.HotelService\AndreTurismoAPI.HotelService.csproj", "{08A26339-7EC3-4334-ABE5-638F59F58AC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AndreTurismoAPI.HotelService", "AndreTurismoAPI.HotelService\AndreTurismoAPI.HotelService.csproj", "{08A26339-7EC3-4334-ABE5-638F59F58AC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndreTurismoAPI.PassagemService", "AndreTurismoAPI.PassagemService\AndreTurismoAPI.PassagemService.csproj", "{F248E6A3-27C3-470A-9991-FF210834128E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AndreTurismoAPI.PassagemService", "AndreTurismoAPI.PassagemService\AndreTurismoAPI.PassagemService.csproj", "{F248E6A3-27C3-470A-9991-FF210834128E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndreTurismoAPI.PacoteService", "AndreTurismoAPI.PacoteService\AndreTurismoAPI.PacoteService.csproj", "{3338AA75-5FC7-494A-AA45-5073AB03AECE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AndreTurismoAPI.PacoteService", "AndreTurismoAPI.PacoteService\AndreTurismoAPI.PacoteService.csproj", "{265A63D0-28DA-426B-90FB-E0FD4005BAA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdreTurismoAPI.Producer", "AdreTurismoAPI.Producer\AdreTurismoAPI.Producer.csproj", "{F8FAC474-A129-4E44-B1CD-F9AF093B8969}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndreTurismo.Consumer", "AndreTurismo.Consumer\AndreTurismo.Consumer.csproj", "{1F75ECF0-473D-43F9-B415-2A3F9D915125}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,10 +75,18 @@ Global
 		{F248E6A3-27C3-470A-9991-FF210834128E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F248E6A3-27C3-470A-9991-FF210834128E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F248E6A3-27C3-470A-9991-FF210834128E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3338AA75-5FC7-494A-AA45-5073AB03AECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3338AA75-5FC7-494A-AA45-5073AB03AECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3338AA75-5FC7-494A-AA45-5073AB03AECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3338AA75-5FC7-494A-AA45-5073AB03AECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{265A63D0-28DA-426B-90FB-E0FD4005BAA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{265A63D0-28DA-426B-90FB-E0FD4005BAA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{265A63D0-28DA-426B-90FB-E0FD4005BAA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{265A63D0-28DA-426B-90FB-E0FD4005BAA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8FAC474-A129-4E44-B1CD-F9AF093B8969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8FAC474-A129-4E44-B1CD-F9AF093B8969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8FAC474-A129-4E44-B1CD-F9AF093B8969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8FAC474-A129-4E44-B1CD-F9AF093B8969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F75ECF0-473D-43F9-B415-2A3F9D915125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F75ECF0-473D-43F9-B415-2A3F9D915125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F75ECF0-473D-43F9-B415-2A3F9D915125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F75ECF0-473D-43F9-B415-2A3F9D915125}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

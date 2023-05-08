@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using AndreTurismoAPI.PassagemService.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<AndreTurismoAPIPassagemServiceContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AndreTurismoAPIPassagemServiceContext") ?? throw new InvalidOperationException("Connection string 'AndreTurismoAPIPassagemServiceContext' not found.")));
 
 // Add services to the container.
 

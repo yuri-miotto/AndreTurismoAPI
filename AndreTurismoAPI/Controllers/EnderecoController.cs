@@ -3,6 +3,7 @@ using AndreTurismoAPI.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using AndreTurismoAPI;
 
 namespace AndreTurismoAPI.Controllers
 {
@@ -13,7 +14,7 @@ namespace AndreTurismoAPI.Controllers
         private EnderecoService _enderecoService;
         private CidadeService _cidadeService;
 
-        public EnderecoController()
+        public EnderecoController(AndreTurismoAPI.AddressService.Data.AndreTurismoAPIAddressServiceContext context)
         {
             _enderecoService = new EnderecoService();
             _cidadeService = new CidadeService();

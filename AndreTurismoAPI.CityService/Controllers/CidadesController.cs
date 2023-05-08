@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using AndreTurismoAPI.AddressService.Data;
+using AndreTurismoAPI.CityService.Data;
 using AndreTurismoAPI.Models;
 
 namespace AndreTurismoAPI.CityService.Controllers
@@ -14,9 +14,9 @@ namespace AndreTurismoAPI.CityService.Controllers
     [ApiController]
     public class CidadesController : ControllerBase
     {
-        private readonly AndreTurismoAPIAddressServiceContext _context;
+        private readonly AndreTurismoAPICityServiceContext _context;
 
-        public CidadesController(AndreTurismoAPIAddressServiceContext context)
+        public CidadesController(AndreTurismoAPICityServiceContext context)
         {
             _context = context;
         }
@@ -88,7 +88,7 @@ namespace AndreTurismoAPI.CityService.Controllers
         {
           if (_context.Cidade == null)
           {
-              return Problem("Entity set 'AndreTurismoAPIAddressServiceContext.Cidade'  is null.");
+              return Problem("Entity set 'AndreTurismoAPICityServiceContext.Cidade'  is null.");
           }
             _context.Cidade.Add(cidade);
             await _context.SaveChangesAsync();

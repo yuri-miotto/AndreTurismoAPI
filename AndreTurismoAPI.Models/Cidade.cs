@@ -9,10 +9,10 @@ namespace AndreTurismoAPI.Models
 {
     public class Cidade
     {
-        public readonly static string INSERIR = "insert into Cidade (Descricao, DataCadastro) values (Descricao, @DataCadastro); select cast(scope_identity() as int)";
+        public readonly static string INSERIR = "insert into Cidade (Descricao, DataCadastro) values (@Descricao, @DataCadastro); select cast(scope_identity() as int)";
         public readonly static string ATUALIZAR = "update Cidade set Descricao = @Descricao, DataCadastro = @DataCadastro where IdCidade = @IdCidade";
         public readonly static string DELETAR = "delete from Cidade where IdCidade = @IdCidade";
-        public readonly static string CONSULTAR = "select IdCidade, Descricao, DataCadastro from Cidade";
+        public readonly static string CONSULTAR = "select Id, Descricao, DataCadastro from Cidade";
         public readonly static string CONSULTARPORID = "select IdCidade, Descricao, DataCadastro from Cidade where IdCidade = @IdCidade";
 
         [Key]
